@@ -2,6 +2,10 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { SectionHeading } from "./section-heading";
+import { PlatformArchitecture } from "@/components/diagrams/platform-architecture";
+import { MvnoInABox } from "@/components/diagrams/mvno-in-a-box";
+import { DataFlow } from "@/components/diagrams/data-flow";
+import { TenantHierarchy } from "@/components/diagrams/tenant-hierarchy";
 import { flolivePlatform } from "@/content/proposal";
 
 export function FloLive() {
@@ -43,6 +47,22 @@ export function FloLive() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <Separator className="my-20 opacity-60" />
+
+        <SectionHeading
+          kicker="How the Platform Works"
+          title="The platform, visualised"
+          lede="Four diagrams that map how floLIVE is structured, what's in the MVNO-in-a-Box, how IoT data flows from the device to the enterprise, and how ipNX can run a multi-tier B2B2X wholesale business on top."
+        />
+        <div className="mt-12 grid gap-6">
+          <PlatformArchitecture />
+          <div className="grid gap-6 lg:grid-cols-2">
+            <MvnoInABox />
+            <DataFlow />
+          </div>
+          <TenantHierarchy />
         </div>
 
         <Separator className="my-20 opacity-60" />
