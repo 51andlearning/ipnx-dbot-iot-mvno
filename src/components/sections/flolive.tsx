@@ -13,7 +13,7 @@ export function FloLive() {
           title={flolivePlatform.title}
         />
         <div className="mx-auto mt-8 max-w-3xl text-center">
-          <div className="text-2xl font-semibold tracking-tight sm:text-3xl">
+          <div className="text-2xl font-semibold tracking-tight text-[color:var(--text)] sm:text-3xl">
             {flolivePlatform.headline}
           </div>
           <p className="mt-3 text-muted-foreground">{flolivePlatform.subhead}</p>
@@ -21,7 +21,7 @@ export function FloLive() {
             href={flolivePlatform.source}
             target="_blank"
             rel="noreferrer"
-            className="mt-4 inline-block text-xs text-muted-foreground underline-offset-4 hover:underline"
+            className="mt-4 inline-block text-xs font-medium text-[color:var(--accent)] underline-offset-4 hover:underline"
           >
             flolive.net ↗
           </a>
@@ -29,9 +29,14 @@ export function FloLive() {
 
         <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {flolivePlatform.pillars.map((p) => (
-            <Card key={p.title} className="border-border/60">
+            <Card
+              key={p.title}
+              className="card-lift rounded-2xl border-border/60 bg-white shadow-sm"
+            >
               <CardHeader>
-                <CardTitle className="text-base">{p.title}</CardTitle>
+                <CardTitle className="text-base text-[color:var(--text)]">
+                  {p.title}
+                </CardTitle>
               </CardHeader>
               <CardContent className="text-sm leading-6 text-muted-foreground">
                 {p.body}
@@ -40,12 +45,17 @@ export function FloLive() {
           ))}
         </div>
 
-        <Separator className="my-20" />
+        <Separator className="my-20 opacity-60" />
 
         <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr]">
           <div>
-            <Badge variant="outline" className="mb-4">Zero CapEx, Fast Time to Market</Badge>
-            <h3 className="text-balance text-2xl font-semibold tracking-tight sm:text-3xl">
+            <Badge
+              variant="outline"
+              className="mb-4 rounded-full border-[color:var(--accent)]/25 bg-[color:var(--accent-light)] text-[color:var(--accent)]"
+            >
+              Zero CapEx, Fast Time to Market
+            </Badge>
+            <h3 className="text-balance text-2xl font-semibold tracking-tight text-[color:var(--text)] sm:text-3xl">
               {flolivePlatform.mvnoInABox.headline}
             </h3>
             <p className="mt-3 text-muted-foreground">
@@ -55,9 +65,12 @@ export function FloLive() {
               {flolivePlatform.mvnoInABox.features.map((f) => (
                 <li
                   key={f}
-                  className="flex gap-3 rounded-lg border border-border/50 bg-muted/20 p-3 text-sm"
+                  className="flex gap-3 rounded-xl border border-border/60 bg-white p-3 text-sm shadow-sm"
                 >
-                  <span className="mt-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-foreground" />
+                  <span
+                    className="mt-1.5 inline-block h-1.5 w-1.5 shrink-0 rounded-full"
+                    style={{ backgroundColor: "var(--accent)" }}
+                  />
                   {f}
                 </li>
               ))}
@@ -65,16 +78,18 @@ export function FloLive() {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold tracking-tight">
+            <h3 className="text-xl font-semibold tracking-tight text-[color:var(--text)]">
               {flolivePlatform.cmp.title}
             </h3>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
               {flolivePlatform.cmp.features.map((f) => (
                 <div
                   key={f.title}
-                  className="rounded-lg border border-border/60 p-4"
+                  className="card-lift rounded-xl border border-border/60 bg-white p-4 shadow-sm"
                 >
-                  <div className="text-sm font-medium">{f.title}</div>
+                  <div className="text-sm font-semibold text-[color:var(--accent)]">
+                    {f.title}
+                  </div>
                   <div className="mt-1 text-xs leading-5 text-muted-foreground">
                     {f.body}
                   </div>
@@ -84,12 +99,16 @@ export function FloLive() {
           </div>
         </div>
 
-        <Separator className="my-20" />
+        <Separator className="my-20 opacity-60" />
 
         <SectionHeading title="Trusted by global IoT leaders" />
         <div className="mx-auto mt-8 flex max-w-4xl flex-wrap items-center justify-center gap-2">
           {flolivePlatform.referenceCustomers.map((c) => (
-            <Badge key={c} variant="secondary" className="text-xs">
+            <Badge
+              key={c}
+              variant="secondary"
+              className="rounded-full bg-[color:var(--accent-light)] px-3 py-1 text-xs font-semibold text-[color:var(--accent-dark)]"
+            >
               {c}
             </Badge>
           ))}
@@ -99,10 +118,18 @@ export function FloLive() {
           {flolivePlatform.testimonials.map((t) => (
             <figure
               key={t.author}
-              className="rounded-xl border border-border/60 bg-background p-6"
+              className="card-lift rounded-2xl border border-border/60 bg-white p-6 shadow-sm"
             >
-              <blockquote className="text-sm leading-7">&ldquo;{t.quote}&rdquo;</blockquote>
-              <figcaption className="mt-4 text-xs font-medium uppercase tracking-wider text-muted-foreground">
+              <div
+                className="mb-3 text-3xl leading-none"
+                style={{ color: "var(--accent)" }}
+              >
+                “
+              </div>
+              <blockquote className="text-sm leading-7 text-[color:var(--text)]">
+                {t.quote}
+              </blockquote>
+              <figcaption className="mt-4 text-xs font-semibold uppercase tracking-[0.14em] text-[color:var(--accent)]">
                 — {t.author}
               </figcaption>
             </figure>

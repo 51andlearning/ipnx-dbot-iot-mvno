@@ -7,9 +7,21 @@ export function ExecutiveSummary() {
     <section id="summary" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
       <SectionHeading title={execSummary.title} lede={execSummary.lede} />
       <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {execSummary.outcomes.map((o) => (
-          <Card key={o.title} className="border-border/60">
+        {execSummary.outcomes.map((o, i) => (
+          <Card
+            key={o.title}
+            className="card-lift rounded-2xl border-border/60 bg-white shadow-sm"
+          >
             <CardHeader>
+              <div
+                className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full text-xs font-semibold"
+                style={{
+                  backgroundColor: "var(--accent-light)",
+                  color: "var(--accent)",
+                }}
+              >
+                {i + 1}
+              </div>
               <CardTitle className="text-xl">{o.title}</CardTitle>
             </CardHeader>
             <CardContent className="text-sm leading-6 text-muted-foreground">

@@ -1,25 +1,27 @@
 import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
 import { nav, site } from "@/content/site";
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border/70 bg-white/85 backdrop-blur-sm supports-[backdrop-filter]:bg-white/70">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="#top" className="flex items-center gap-2 font-semibold tracking-tight">
-          <span className="inline-flex h-7 items-center rounded-md bg-foreground px-2 text-[11px] font-bold tracking-wider text-background">
+        <Link href="#top" className="flex items-center gap-3">
+          <span
+            className="inline-flex h-8 items-center rounded-full px-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-white"
+            style={{ backgroundColor: "var(--accent)" }}
+          >
             DSG × ipNX
           </span>
           <span className="hidden text-sm text-muted-foreground sm:inline">
             {site.tagline}
           </span>
         </Link>
-        <nav className="hidden items-center gap-6 md:flex">
+        <nav className="hidden items-center gap-7 md:flex">
           {nav.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="text-sm text-muted-foreground transition hover:text-foreground"
+              className="text-sm font-medium text-muted-foreground transition hover:text-[color:var(--accent)]"
             >
               {item.label}
             </a>
@@ -28,7 +30,8 @@ export function SiteHeader() {
         <div className="flex items-center gap-2">
           <a
             href="#next-steps"
-            className={buttonVariants({ size: "sm" }) + " hidden sm:inline-flex px-4"}
+            className="hidden items-center justify-center rounded-full px-4 h-9 text-xs font-semibold text-white shadow-sm transition hover:opacity-90 sm:inline-flex"
+            style={{ backgroundColor: "var(--accent)" }}
           >
             Approve Design Phase
           </a>
