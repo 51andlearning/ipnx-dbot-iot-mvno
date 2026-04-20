@@ -1,7 +1,7 @@
 export const site = {
-  name: "ipNX DBOT IoT MVNO",
-  shortName: "ipNX DBOT",
-  tagline: "Transformation Strategy 2026+",
+  name: "ipNX IoT MVNO",
+  shortName: "ipNX IoT",
+  tagline: "IoT MVNO — DBOT Proposal 2026+",
   url: "https://ipnx-dbot-iot-mvno.vercel.app",
   classification: "Confidential — For ipNX Executive and Board Review",
   preparedBy: "DSG | MVNE Division",
@@ -12,8 +12,8 @@ export const site = {
 
 export const nav = [
   { href: "#strategy", label: "Strategy" },
-  { href: "#mvno", label: "MVNO" },
-  { href: "#iot", label: "IoT" },
+  { href: "#mvno", label: "Positioning" },
+  { href: "#iot", label: "Verticals" },
   { href: "#platform", label: "Platform" },
   { href: "#dbot", label: "DBOT" },
   { href: "#commercials", label: "Commercials" },
