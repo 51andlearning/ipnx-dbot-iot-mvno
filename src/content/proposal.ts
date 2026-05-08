@@ -434,9 +434,13 @@ export const pricing = {
     ],
   },
   notes: [
-    "Typical end-to-end rollout is 4–6 months from agreement signature.",
-    "Excludes host-MNO wholesale data, IMEI / SIM hardware, devices, KYC, taxes and working capital.",
-    "USD-denominated; subject to FX fluctuation per the standard DSG terms.",
+    { text: "Typical end-to-end rollout is 4–6 months from agreement signature." },
+    {
+      text:
+        "Excludes host-MNO wholesale data, IMEI / SIM hardware, devices, KYC, taxes and working capital.",
+    },
+    { text: "USD-denominated; subject to FX fluctuation per the standard DSG terms." },
+    { text: "Excludes any hardware and hosting costs.", emphasis: true },
   ],
 };
 

@@ -107,14 +107,22 @@ export function Pricing() {
             </table>
           </div>
 
-          <ul className="mt-8 space-y-2 text-xs text-muted-foreground">
+          <ul className="mt-8 space-y-2 text-xs">
             {pricing.notes.map((n) => (
-              <li key={n} className="flex gap-2">
+              <li
+                key={n.text}
+                className={
+                  "flex gap-2 " +
+                  (n.emphasis
+                    ? "font-semibold text-[color:var(--accent)]"
+                    : "text-muted-foreground")
+                }
+              >
                 <span
                   className="mt-1.5 inline-block h-1 w-1 shrink-0 rounded-full"
                   style={{ backgroundColor: "var(--accent)" }}
                 />
-                {n}
+                {n.text}
               </li>
             ))}
           </ul>
