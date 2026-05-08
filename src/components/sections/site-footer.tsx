@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { footer, site } from "@/content/site";
 
 export function SiteFooter() {
@@ -9,11 +10,18 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-[1.5fr_1fr_1fr]">
           <div>
-            <div
-              className="inline-flex h-8 items-center rounded-full px-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-white"
-              style={{ backgroundColor: "var(--accent)" }}
-            >
-              DSG × ipNX
+            <div className="flex items-center gap-3">
+              <Image
+                src="/images/ipnx-logo.png"
+                alt="ipNX"
+                width={682}
+                height={276}
+                className="h-9 w-auto"
+              />
+              <span className="h-7 w-px bg-border" />
+              <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                DSG MVNE
+              </span>
             </div>
             <div className="mt-3 text-sm text-muted-foreground">
               {site.tagline}

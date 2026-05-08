@@ -1,6 +1,7 @@
-const COL_NAVY = "#032572";
-const COL_NAVY_DARK = "#021d5a";
-const COL_NAVY_SOFT = "#e8eef9";
+// ipNX CI palette — brand red + charcoal
+const COL_NAVY = "#e30613";
+const COL_NAVY_DARK = "#1a1a1a";
+const COL_NAVY_SOFT = "#fce5e7";
 const COL_MUTED = "#6c757d";
 const COL_BORDER = "#dee2e6";
 

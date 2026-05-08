@@ -1,6 +1,7 @@
-const COL_NAVY = "#032572";
-const COL_NAVY_DARK = "#021d5a";
-const COL_NAVY_SOFT = "#e8eef9";
+// ipNX CI palette — brand red for highlighted layers + charcoal for deepest tier
+const COL_NAVY = "#e30613"; // brand red (was navy)
+const COL_NAVY_DARK = "#1a1a1a"; // charcoal-dark (was deep navy)
+const COL_NAVY_SOFT = "#fce5e7"; // soft brand-red wash (was soft navy)
 const COL_TEXT = "#212529";
 const COL_MUTED = "#6c757d";
 const COL_BORDER = "#dee2e6";
