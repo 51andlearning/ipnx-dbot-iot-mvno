@@ -2,7 +2,7 @@ export const hero = {
   eyebrow: "ipNX IoT — DBOT Proposal 2026+",
   title: "Build Nigeria's Premier Enterprise IoT MVNO.",
   subtitle:
-    "A Design-Build-Operate-Transfer partnership from DSG (MVNE) — launching the ipNX IoT MVNO on floLIVE's cloud-native platform. Asset-light, NDPR-aligned, and revenue-generating within nine months.",
+    "A Design-Build-Operate-Transfer partnership from DSG (MVNE) — launching the ipNX IoT MVNO on a cloud-native global IoT platform. Asset-light, NDPR-aligned, and revenue-generating within nine months.",
   primaryCta: { label: "Approve Design Phase", href: "#next-steps" },
   secondaryCta: { label: "Read the Proposal", href: "#strategy" },
 };
@@ -43,7 +43,7 @@ export const strategyPillars = {
     },
     {
       title: "Asset-Light Economics",
-      body: "No spectrum. No RAN. No core CapEx. Leverage an MNO host agreement, deploy floLIVE's MVNO-in-a-Box, and pay only for what moves. Cash-flow positive fast.",
+      body: "No spectrum. No RAN. No core CapEx. Leverage an MNO host agreement, deploy a turnkey MVNE platform, and pay only for what moves. Cash-flow positive fast.",
     },
     {
       title: "B2B2X Wholesale Upside",
@@ -185,11 +185,12 @@ export const iotTrack = {
   ],
 };
 
-export const flolivePlatform = {
-  title: "IoT Platform Partner — floLIVE",
-  headline: "\"A Network Beyond.\"",
-  subhead: "The first global network purpose-built for intelligent IoT operations.",
-  source: "https://flolive.net/",
+export const platform = {
+  title: "Cloud-native IoT Platform",
+  kicker: "Connectivity Backbone",
+  headline: "A network purpose-built for intelligent IoT operations.",
+  subhead:
+    "Multi-IMSI over eSIM (eUICC), a globally distributed locally-compliant core network, and a multi-tenant Connectivity Management Platform — delivered as a managed service to the ipNX IoT MVNO.",
   pillars: [
     {
       title: "Seamless",
@@ -201,11 +202,11 @@ export const flolivePlatform = {
     },
     {
       title: "Adaptive",
-      body: "Owning the infrastructure provides flexibility to evolve as markets, regulations, and use cases change.",
+      body: "Owned infrastructure provides the flexibility to evolve as markets, regulations, and use cases change.",
     },
     {
-      title: "Crazy-smart",
-      body: "Intelligent optimisation that continuously balances performance, reliability, and cost.",
+      title: "Intelligent",
+      body: "Continuous optimisation balancing performance, reliability, and cost across every connection.",
     },
   ],
   mvnoInABox: {
@@ -213,7 +214,7 @@ export const flolivePlatform = {
     headline:
       "Launch a fully branded IoT connectivity business — zero CapEx, weeks not years.",
     subhead:
-      "floLIVE's turnkey platform powers the ipNX IoT MVNO end-to-end — from SIM to portal.",
+      "A turnkey, managed MVNE platform that powers the ipNX IoT MVNO end-to-end — from SIM to portal.",
     features: [
       "White-labelled Connectivity Management Platform (CMP)",
       "Cloud-native core network (2G/3G/4G/NB-IoT/LTE-M/5G)",
@@ -262,37 +263,6 @@ export const flolivePlatform = {
       },
     ],
   },
-  testimonials: [
-    {
-      quote:
-        "Collaborating with floLIVE through an API-first approach makes it easier to deliver an embedded and optimised solution.",
-      author: "Qualcomm Technologies",
-    },
-    {
-      quote:
-        "floLIVE solved our cross-border connectivity issues and finally gave us a pricing model that makes sense — only charging for active endpoints.",
-      author: "The Aroma Trace, CEO",
-    },
-    {
-      quote:
-        "floLIVE's ability to provide a single SKU that behaves the same everywhere is invaluable.",
-      author: "Netafim, Product Leader",
-    },
-    {
-      quote:
-        "With floLIVE's Connectivity Management Platform we have real-time visibility and ability to switch between mobile networks seamlessly.",
-      author: "Helix Wireless, Founder & CEO",
-    },
-  ],
-  referenceCustomers: [
-    "Qualcomm",
-    "Telit Cinterion",
-    "Eseye",
-    "Sparkle",
-    "Netafim",
-    "Bayobab",
-    "Helix Wireless",
-  ],
 };
 
 export const dbotEngagement = {
@@ -315,7 +285,7 @@ export const dbotEngagement = {
       deliverables: [
         "IoT MVP — Starter / Scale / Enterprise / Global / Wholesale",
         "GTM — vertical sales plan, channel map, pricing",
-        "Operating Model — RACI across ipNX / DSG / floLIVE / host MNO",
+        "Operating Model — RACI across ipNX, DSG, host MNO and platform partner",
         "Integrated Customer Experience — enterprise + self-service journeys",
         "60-month business model with CapEx, OpEx, break-even, sensitivity",
       ],
@@ -325,15 +295,15 @@ export const dbotEngagement = {
       title: "Build & Operate",
       duration: "6 months",
       purpose:
-        "Stand up a Transformation Project Office co-led with ipNX and deliver a production ipNX IoT MVNO. Integrate floLIVE CMP, host MNO BSS, KYC, and close the first anchor customers in each vertical.",
+        "Stand up a Transformation Project Office co-led with ipNX and deliver a production ipNX IoT MVNO. Integrate the IoT platform, host MNO BSS, KYC, and close the first anchor customers in each vertical.",
       activities: [
         "Phase 1 — Finalise commercial model, MNO host agreement, vertical target list",
-        "Phase 2 — Technical enablement: floLIVE CMP, APN, OCS, billing, CRM, KYC",
+        "Phase 2 — Technical enablement: CMP, APN, OCS, billing, CRM, KYC",
         "Phase 3 — Soft launch: pilot enterprise accounts per vertical",
         "Phase 4 — Full commercial launch and scale-out on the ipNX IoT portal",
       ],
       deliverables: [
-        "Live ipNX IoT MVNO on floLIVE — production CMP + APN",
+        "Live ipNX IoT MVNO — production CMP + APN",
         "TPO stood up, dashboards, KPI reporting cadence",
         "Operational manuals and SOPs for NOC / CS / provisioning",
         "Anchor-customer contracts signed across at least 3 verticals",
@@ -355,19 +325,19 @@ export const dbotEngagement = {
         "Knowledge Transfer Framework",
         "Governance Charter & SOPs",
         "\"Go-Independent\" certification",
-        "3–6 month post-transfer DSG / floLIVE support",
+        "3–6 month post-transfer support from DSG and the platform partner",
       ],
     },
   ],
 };
 
 export const commercials = {
-  title: "Investment & Commercials",
+  title: "DSG Engagement Commercials",
   headline: "USD 250,000",
   subhead:
-    "Fixed fee — Design, Build & Operate, Transfer. 9-month programme.",
+    "DSG fixed fee — Design, Build & Operate, Transfer. 9-month programme.",
   note:
-    "Strategic enablement, not an expense — this delivers a live, self-sustaining ipNX IoT MVNO with enterprise contracts at hand-over.",
+    "Strategic enablement, not an expense — this delivers a live, self-sustaining ipNX IoT MVNO with enterprise contracts at hand-over. Platform run-cost is a separate retail line — see Platform Pricing below.",
   lines: [
     {
       item: "Fixed Fee Investment",
@@ -386,12 +356,85 @@ export const commercials = {
     },
   ],
   excluded:
-    "Excluded: floLIVE platform fees (CMP, core, SIM, eSIM, local-breakout), host-MNO wholesale data, KYC, devices, working capital, and launch marketing. These are sized as a transparent line-item during the Design Phase against ipNX's forecast IoT volumes.",
+    "Excluded from the DSG fee: connectivity platform retail charges (set-up, monthly core, per-IMSI CMP — see Platform Pricing), host-MNO wholesale data, KYC, devices, working capital, and launch marketing. These are sized as transparent line-items during the Design Phase against ipNX's forecast IoT volumes.",
   payment: [
     "50% deposit on acceptance",
     "Monthly thereafter per SoW",
     "Net 30 days; 2% penalty per month on late payment",
     "Pricing indicative and subject to USD FX fluctuation",
+  ],
+};
+
+export const pricing = {
+  title: "Platform Pricing",
+  kicker: "Indicative Retail Pricing — IoT Connectivity Platform",
+  intro:
+    "Indicative retail rates for the underlying IoT connectivity platform that powers the ipNX IoT MVNO: a one-time core network set-up, a recurring core network service charge once go-live is reached, and a per-IMSI CMP charge that scales by SIM volume and average data plan size.",
+  oneTime: [
+    {
+      label: "Core network set-up",
+      value: "USD 75,000",
+      note: "One-time charge upfront. Covers core network configuration, integration, on-boarding.",
+    },
+    {
+      label: "Core network monthly service",
+      value: "USD 15,000 / month",
+      note: "Geo-redundant core network. Recurring charge starts ARO + 6 months (post-deployment).",
+    },
+  ],
+  cmp: {
+    title: "CMP charge per IMSI — monthly",
+    intro:
+      "Recurring CMP charge per active IMSI, billed monthly and grouped by SIM-volume tier. Two columns reflect the device data profile: ≤ 5MB/month (low-data, e.g. metering, telemetry) versus > 5MB/month (higher-data, e.g. fleet, fintech, video).",
+    headers: ["SIM Volume Tier", "Unit", "≤ 5MB / month", "> 5MB / month"],
+    rows: [
+      {
+        tier: "1 – 10,000",
+        unit: "per 10,000 SIMs",
+        low: "USD 1,350",
+        lowEff: "$0.135 / SIM",
+        high: "USD 2,250",
+        highEff: "$0.225 / SIM",
+      },
+      {
+        tier: "10,001 – 50,000",
+        unit: "per 10,000 SIMs",
+        low: "USD 1,200",
+        lowEff: "$0.120 / SIM",
+        high: "USD 1,950",
+        highEff: "$0.195 / SIM",
+      },
+      {
+        tier: "50,001 – 250,000",
+        unit: "per 50,000 SIMs",
+        low: "USD 5,250",
+        lowEff: "$0.105 / SIM",
+        high: "USD 9,000",
+        highEff: "$0.180 / SIM",
+      },
+      {
+        tier: "250,001 – 1,000,000",
+        unit: "per 50,000 SIMs",
+        low: "USD 4,875",
+        lowEff: "$0.0975 / SIM",
+        high: "USD 8,250",
+        highEff: "$0.165 / SIM",
+      },
+      {
+        tier: "1,000,001 +",
+        unit: "per 100,000 SIMs",
+        low: "USD 9,000",
+        lowEff: "$0.090 / SIM",
+        high: "USD 15,375",
+        highEff: "$0.15375 / SIM",
+      },
+    ],
+  },
+  notes: [
+    "Pricing is indicative retail (50% markup over wholesale) and subject to formal SoW.",
+    "Typical end-to-end rollout is 4–6 months from agreement signature.",
+    "Excludes host-MNO wholesale data, IMEI / SIM hardware, devices, KYC, taxes and working capital.",
+    "USD-denominated; subject to FX fluctuation per the standard DSG terms.",
   ],
 };
 

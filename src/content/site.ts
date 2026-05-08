@@ -12,11 +12,11 @@ export const site = {
 
 export const nav = [
   { href: "#strategy", label: "Strategy" },
-  { href: "#mvno", label: "Positioning" },
   { href: "#iot", label: "Verticals" },
   { href: "#platform", label: "Platform" },
   { href: "#dbot", label: "DBOT" },
-  { href: "#commercials", label: "Commercials" },
+  { href: "#commercials", label: "Engagement" },
+  { href: "#pricing", label: "Pricing" },
 ] as const;
 
 export const footer = {

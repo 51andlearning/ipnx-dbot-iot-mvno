@@ -63,7 +63,7 @@ export function PlatformArchitecture() {
           Diagram · 01
         </div>
         <h4 className="mt-1 text-lg font-semibold tracking-tight text-[color:var(--text)]">
-          floLIVE Platform Architecture
+          IoT Platform Architecture
         </h4>
         <p className="mt-1 text-sm text-muted-foreground">
           The full stack, from IoT devices at the edge to the enterprises and OEMs that consume
@@ -72,7 +72,7 @@ export function PlatformArchitecture() {
       </figcaption>
       <svg
         role="img"
-        aria-label="floLIVE platform architecture stack diagram"
+        aria-label="IoT platform architecture stack diagram"
         viewBox="0 0 900 520"
         width="100%"
         style={{ display: "block" }}

@@ -34,7 +34,7 @@ ipnx-dbot-iot-mvno/
 │   ├── content/                    # File-based content (TS modules, MDX, JSON)
 │   │   ├── proposal.ts             # Canonical proposal copy (sections referenced across pages)
 │   │   ├── iot-verticals.ts
-│   │   ├── flolive-features.ts
+│   │   ├── platform-features.ts
 │   │   ├── dsg-divisions.ts
 │   │   └── testimonials.ts
 │   └── lib/

@@ -5,7 +5,7 @@
 - `/strategy` — Background, strategic rationale, FMC, SME upsell, residential cross-sell, asset-light expansion.
 - `/mvno` — Proposed ipNX MVNO positioning, brand pillars, revenue model, competitive differentiation.
 - `/iot` — Dedicated IoT MVNO track: verticals, propositions, product capabilities.
-- `/platform` — floLIVE IoT platform (pillars, MVNO in a Box, CMP, add-ons, testimonials, NCC/NDPR fit).
+- `/platform` — IoT connectivity platform (pillars, MVNO in a Box, CMP, architecture diagrams, NCC/NDPR fit).
 - `/dbot` — DBOT engagement model, Design / Build & Operate / Transfer phases, deliverables.
 - `/commercials` — Investment, resource plan, timeframe, next steps.
 - `/about-dsg` — DSG capability stack (MVNE, CXG, Digitalise, BroadBrand, digitalmall, Digital Resilience, eInsurer).
@@ -17,9 +17,9 @@
 - `ExecutiveSummary` — three-pillar outcome block.
 - `StatGrid` — quantified benefit tiles (ARPU uplift, churn reduction, timeline).
 - `Timeline` — DBOT 9-month phased timeline.
-- `FeatureGrid` — IoT verticals, floLIVE add-ons, DSG divisions.
+- `FeatureGrid` — IoT verticals, platform add-ons, DSG divisions.
 - `ComparisonTable` — Traditional MNO vs. ipNX MVNO Advantage.
-- `TestimonialCarousel` — floLIVE customer quotes (Qualcomm, Netafim, Sparkle, Helix Wireless, Aroma Trace).
+- `PlatformDiagrams` — architecture, MVNO-in-a-Box, data flow, tenant hierarchy.
 - `PricingBlock` — USD 250,000 fixed fee + line-items.
 - `CTABand` — "Approve Design Phase by 2 April 2026."
 - `Footer` — legal, contact, logo lock-up (DSG, MVNE, ipNX).

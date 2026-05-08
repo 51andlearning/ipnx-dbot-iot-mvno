@@ -4,9 +4,10 @@ import { ExecutiveSummary } from "@/components/sections/executive-summary";
 import { Strategy } from "@/components/sections/strategy";
 import { MvnoSection } from "@/components/sections/mvno";
 import { IotTrack } from "@/components/sections/iot-track";
-import { FloLive } from "@/components/sections/flolive";
+import { Platform } from "@/components/sections/platform";
 import { DbotEngagement } from "@/components/sections/dbot";
 import { Commercials } from "@/components/sections/commercials";
+import { Pricing } from "@/components/sections/pricing";
 import { NextSteps } from "@/components/sections/next-steps";
 import { SiteFooter } from "@/components/sections/site-footer";
 
@@ -20,9 +21,10 @@ export default function Home() {
         <Strategy />
         <MvnoSection />
         <IotTrack />
-        <FloLive />
+        <Platform />
         <DbotEngagement />
         <Commercials />
+        <Pricing />
         <NextSteps />
       </main>
       <SiteFooter />

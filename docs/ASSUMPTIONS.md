@@ -9,7 +9,7 @@ All content, numbers, and claims in this proposal site are **directional** and p
 
 ## Strategic framing
 - The proposal articulates a **directional strategy**, not a signed commercial plan. The granular 60-month business model, target segments, bundle economics, and MNO host-agreement terms are Design Phase outputs — not inputs.
-- The choice of floLIVE as the IoT platform is a **recommended** partnership, not a contracted one. Alternative IoT MVNE platforms can be evaluated during Design.
+- The IoT platform partner is a recommended (not yet contracted) selection. Alternative IoT MVNE platforms can be evaluated during the Design Phase. Indicative retail pricing on the site reflects DSG's currently preferred partner.
 - Host MNO (MTN / Airtel / Glo / 9mobile) is **unspecified** — selection follows Design Phase commercial modelling.
 
 ## Regulatory & compliance
@@ -17,7 +17,7 @@ All content, numbers, and claims in this proposal site are **directional** and p
 - Data-sovereignty architecture (local breakout, in-country CMP deployment) is presented as **available capability**, not as a regulator-approved design.
 
 ## Commercials
-- USD 250,000 fixed fee covers DSG's DBOT services only. **Platform fees (floLIVE CMP, core, SIM, eSIM, local-breakout), host-MNO wholesale, KYC, devices, working capital, and launch marketing are explicitly excluded** and sized during Design.
+- USD 250,000 fixed fee covers DSG's DBOT services only. **Platform retail charges (core set-up, recurring core service, per-IMSI CMP), host-MNO wholesale data, KYC, devices, working capital, and launch marketing are explicitly excluded** from the DSG fee. Indicative platform retail pricing is shown on the Pricing section of the site and is sized definitively during Design.
 - Pricing is indicative and subject to USD FX fluctuation (per Terms & Conditions, §18 of the proposal).
 
 ## Validation gates

@@ -10,7 +10,7 @@ const steps: Step[] = [
   { label: "IoT Device", sub: "Meter · PoS · Sensor", tone: "soft" },
   { label: "SIM / eSIM", sub: "Multi-IMSI · SGP.32", tone: "soft" },
   { label: "Host MNO RAN", sub: "4G / NB-IoT / LTE-M", tone: "soft" },
-  { label: "floLIVE Core", sub: "In-country · cloud-native", tone: "navy" },
+  { label: "IoT Platform Core", sub: "In-country · cloud-native", tone: "navy" },
   { label: "Local Breakout / APN", sub: "NDPR-aligned · static IP", tone: "navy" },
   { label: "Enterprise VPN / App", sub: "ipNX customer backend", tone: "dark" },
 ];
@@ -63,7 +63,7 @@ export function DataFlow() {
           fill={COL_NAVY}
           style={{ letterSpacing: "0.18em", textTransform: "uppercase" }}
         >
-          floLIVE Platform
+          IoT Platform
         </text>
         <text
           x={startX + 5 * boxW + 4.5 * gap - 28}

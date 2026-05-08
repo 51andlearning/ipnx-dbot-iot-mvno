@@ -1,7 +1,7 @@
 # Project Overview
 
 ## What this is
-A standalone proposal website presenting the **DSG ipNX DBOT IoT MVNO Proposal**, delivered by DSG's MVNE division. The site packages the formal proposal (strategic rationale, MVNO positioning, IoT track with floLIVE, DBOT phases, resourcing, commercials) into a shareable, interactive web experience for ipNX executive and board review.
+A standalone proposal website presenting the **DSG ipNX DBOT IoT MVNO Proposal**, delivered by DSG's MVNE division. The site packages the formal proposal (strategic rationale, MVNO positioning, IoT track, IoT platform, DBOT phases, resourcing, commercials, platform pricing) into a shareable, interactive web experience for ipNX executive and board review.
 
 ## Target audience
 - **Primary:** ipNX Executive Committee and Board of Directors.

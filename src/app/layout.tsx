@@ -17,12 +17,12 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "ipNX IoT MVNO — DBOT Proposal 2026+ | DSG MVNE",
   description:
-    "DSG's Design-Build-Operate-Transfer proposal to launch the ipNX IoT MVNO — Nigeria's premier enterprise-grade IoT connectivity operator, on floLIVE's cloud-native platform. A 9-month, USD 250k programme.",
+    "DSG's Design-Build-Operate-Transfer proposal to launch the ipNX IoT MVNO — Nigeria's premier enterprise-grade IoT connectivity operator. A 9-month, USD 250k DSG engagement plus indicative platform retail pricing.",
   metadataBase: new URL("https://ipnx-dbot-iot-mvno.vercel.app"),
   openGraph: {
     title: "ipNX IoT MVNO — DBOT Proposal 2026+",
     description:
-      "Build Nigeria's premier enterprise IoT MVNO. A DBOT partnership by DSG (MVNE) on floLIVE.",
+      "Build Nigeria's premier enterprise IoT MVNO. A DBOT partnership by DSG (MVNE).",
     type: "website",
   },
   robots: { index: false, follow: false },

@@ -30,7 +30,7 @@
 | `workshop_booking_click`      | Clicks calendar-booking link (Calendly / cal.com)                        | `source_page`                               | Conversion       |
 | `pricing_reveal`              | User unlocks gated `/commercials` (if passcode-gated)                    | `source_page`                               | Engagement-deep  |
 | `section_in_view`             | A tracked section scrolls into ≥ 50% viewport                            | `section_id`, `page`                        | Engagement       |
-| `outbound_link_click`         | Click to `flolive.net` or other external                                 | `href`, `source_page`                       | Engagement       |
+| `outbound_link_click`         | Click to any external site                                               | `href`, `source_page`                       | Engagement       |
 | `nav_open_mobile`             | Mobile nav drawer opened                                                 | `source_page`                               | UX               |
 | `theme_toggle`                | Light/dark toggle (if shipped)                                           | `theme`                                     | UX               |
 
