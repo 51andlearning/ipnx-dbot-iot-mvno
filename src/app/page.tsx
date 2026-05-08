@@ -1,6 +1,5 @@
 import { Hero } from "@/components/sections/hero";
 import { ExecutiveSummary } from "@/components/sections/executive-summary";
-import { ExploreGrid } from "@/components/sections/explore-grid";
 import { NextSteps } from "@/components/sections/next-steps";
 
 export default function Home() {
@@ -8,7 +7,6 @@ export default function Home() {
     <>
       <Hero />
       <ExecutiveSummary />
-      <ExploreGrid />
       <NextSteps />
     </>
   );
