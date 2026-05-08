@@ -25,7 +25,7 @@ export function SiteHeader() {
             width={682}
             height={276}
             priority
-            className="h-9 w-auto sm:h-10"
+            className="h-6 w-auto sm:h-7"
           />
           <span className="hidden h-7 w-px bg-border sm:inline-block" aria-hidden />
           <span className="hidden items-center gap-3 sm:inline-flex">
