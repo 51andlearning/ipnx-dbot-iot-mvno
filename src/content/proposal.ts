@@ -442,7 +442,7 @@ export const pricing = {
 
 export const nextSteps = {
   title: "Next Steps",
-  deadline: "Decision required by 2 April 2026.",
+  deadline: "Decision required by 8 June 2026.",
   cta: "Approve Design Phase",
   steps: [
     "Approve engagement and nominate Steering Committee members.",

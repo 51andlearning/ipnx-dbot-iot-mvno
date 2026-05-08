@@ -9,7 +9,7 @@
 - `/dbot` — DBOT engagement model, Design / Build & Operate / Transfer phases, deliverables.
 - `/commercials` — Investment, resource plan, timeframe, next steps.
 - `/about-dsg` — DSG capability stack (MVNE, CXG, Digitalise, BroadBrand, digitalmall, Digital Resilience, eInsurer).
-- `/contact` — Next Steps CTA, decision-required date (2 April 2026), contact details.
+- `/contact` — Next Steps CTA, decision-required date (8 June 2026), contact details.
 - `/legal` — Terms & Conditions, proposal acceptance, validity, pricing adjustments.
 
 ## Sections included (reusable section components)
@@ -21,7 +21,7 @@
 - `ComparisonTable` — Traditional MNO vs. ipNX MVNO Advantage.
 - `PlatformDiagrams` — architecture, MVNO-in-a-Box, data flow, tenant hierarchy.
 - `PricingBlock` — USD 250,000 fixed fee + line-items.
-- `CTABand` — "Approve Design Phase by 2 April 2026."
+- `CTABand` — "Approve Design Phase by 8 June 2026."
 - `Footer` — legal, contact, logo lock-up (DSG, MVNE, ipNX).
 
 ## What is excluded

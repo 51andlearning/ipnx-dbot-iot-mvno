@@ -7,7 +7,7 @@ export const site = {
   preparedBy: "DSG | MVNE Division",
   preparedFor: "ipNX",
   proposalDate: "19 January 2026",
-  decisionBy: "2 April 2026",
+  decisionBy: "8 June 2026",
 } as const;
 
 export const nav = [
