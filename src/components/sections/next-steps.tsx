@@ -39,7 +39,7 @@ export function NextSteps() {
           </div>
           <div className="lg:justify-self-end">
             <a
-              href="mailto:proposals@dsg.africa?subject=ipNX DBOT — Approve Design Phase"
+              href="mailto:edwardw@mvne.co.za?subject=ipNX DBOT — Approve Design Phase"
               className="inline-flex h-12 items-center justify-center rounded-full bg-white px-7 text-sm font-semibold text-[color:var(--accent)] shadow-sm transition hover:bg-[color:var(--accent-light)]"
             >
               {nextSteps.cta}

@@ -28,7 +28,7 @@ export function NextStepsCta() {
           </p>
         </div>
         <a
-          href="mailto:proposals@dsg.africa?subject=ipNX DBOT — Approve Design Phase"
+          href="mailto:edwardw@mvne.co.za?subject=ipNX DBOT — Approve Design Phase"
           className="inline-flex h-12 shrink-0 items-center justify-center rounded-full bg-white px-7 text-sm font-semibold text-[color:var(--accent)] shadow-sm transition hover:bg-[color:var(--accent-light)]"
         >
           {nextSteps.cta}

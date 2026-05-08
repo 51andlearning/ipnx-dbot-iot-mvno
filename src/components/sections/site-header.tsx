@@ -61,7 +61,7 @@ export function SiteHeader() {
         </nav>
         <div className="flex items-center gap-2">
           <a
-            href="mailto:proposals@dsg.africa?subject=ipNX DBOT — Approve Design Phase"
+            href="mailto:edwardw@mvne.co.za?subject=ipNX DBOT — Approve Design Phase"
             className="hidden items-center justify-center rounded-full px-4 h-9 text-xs font-semibold text-white shadow-sm transition hover:opacity-90 sm:inline-flex"
             style={{ backgroundColor: "var(--accent)" }}
           >

@@ -5,7 +5,7 @@ export const hero = {
     "A Design-Build-Operate-Transfer partnership from DSG (MVNE) — launching the ipNX IoT MVNO on a cloud-native global IoT platform. Asset-light, NDPR-aligned, and revenue-generating within nine months.",
   primaryCta: {
     label: "Approve Design Phase",
-    href: "mailto:proposals@dsg.africa?subject=ipNX DBOT — Approve Design Phase",
+    href: "mailto:edwardw@mvne.co.za?subject=ipNX DBOT — Approve Design Phase",
   },
   secondaryCta: { label: "Read the Proposal", href: "/strategy" },
 };
