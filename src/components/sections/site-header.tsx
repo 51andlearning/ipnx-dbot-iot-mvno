@@ -27,9 +27,22 @@ export function SiteHeader() {
             priority
             className="h-9 w-auto sm:h-10"
           />
-          <span className="hidden h-7 w-px bg-border sm:inline-block" />
-          <span className="hidden text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground sm:inline">
-            DSG MVNE Proposal
+          <span className="hidden h-7 w-px bg-border sm:inline-block" aria-hidden />
+          <span className="hidden items-center gap-3 sm:inline-flex">
+            <Image
+              src="/images/MVNE_BLUE.png"
+              alt="MVNE"
+              width={1919}
+              height={712}
+              className="h-6 w-auto sm:h-7"
+            />
+            <Image
+              src="/images/DSG-small.png"
+              alt="DSG"
+              width={138}
+              height={65}
+              className="h-6 w-auto sm:h-7"
+            />
           </span>
         </Link>
         <nav className="hidden items-center gap-7 md:flex">
