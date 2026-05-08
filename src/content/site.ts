@@ -6,7 +6,7 @@ export const site = {
   classification: "Confidential — For ipNX Executive and Board Review",
   preparedBy: "DSG | MVNE Division",
   preparedFor: "ipNX",
-  proposalDate: "19 January 2026",
+  proposalDate: "08 May 2026",
   decisionBy: "8 June 2026",
 } as const;
 
