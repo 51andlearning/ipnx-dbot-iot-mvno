@@ -431,7 +431,6 @@ export const pricing = {
     ],
   },
   notes: [
-    "Pricing is indicative retail (50% markup over wholesale) and subject to formal SoW.",
     "Typical end-to-end rollout is 4–6 months from agreement signature.",
     "Excludes host-MNO wholesale data, IMEI / SIM hardware, devices, KYC, taxes and working capital.",
     "USD-denominated; subject to FX fluctuation per the standard DSG terms.",
