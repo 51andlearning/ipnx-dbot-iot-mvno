@@ -74,7 +74,7 @@ export function PlatformArchitecture() {
       <svg
         role="img"
         aria-label="IoT platform architecture stack diagram"
-        viewBox="0 0 900 520"
+        viewBox="0 0 900 580"
         width="100%"
         style={{ display: "block" }}
       >
@@ -121,7 +121,7 @@ export function PlatformArchitecture() {
         />
         <ArrowDown x={450} y={482} />
         <Layer
-          y={480}
+          y={500}
           title="Host MNO radio networks · IoT devices at the edge"
           items={["MTN", "Airtel", "9mobile", "Glo", "…"]}
           tone="outline"

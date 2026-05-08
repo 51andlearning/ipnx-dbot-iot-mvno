@@ -20,8 +20,9 @@ export function DataFlow() {
   const boxW = 140;
   const boxH = 90;
   const gap = 14;
+  const viewW = 920;
   const totalW = steps.length * boxW + (steps.length - 1) * gap;
-  const startX = (900 - totalW) / 2;
+  const startX = (viewW - totalW) / 2;
   const y = 140;
 
   return (
@@ -41,14 +42,15 @@ export function DataFlow() {
       <svg
         role="img"
         aria-label="End-to-end IoT data flow from device to enterprise"
-        viewBox="0 0 900 300"
+        viewBox={`0 0 ${viewW} 300`}
         width="100%"
         style={{ display: "block" }}
       >
-        {/* Background label bands */}
+        {/* Tier labels — centred over the boxes that belong to each tier */}
         <text
-          x={startX + boxW + gap / 2 - 6}
+          x={startX + 1.5 * boxW + gap}
           y={40}
+          textAnchor="middle"
           fontSize={11}
           fontWeight={700}
           fill={COL_MUTED}
@@ -57,8 +59,9 @@ export function DataFlow() {
           Edge
         </text>
         <text
-          x={startX + 3 * boxW + 2.5 * gap - 8}
+          x={startX + 4 * boxW + 3.5 * gap}
           y={40}
+          textAnchor="middle"
           fontSize={11}
           fontWeight={700}
           fill={COL_NAVY}
@@ -67,8 +70,9 @@ export function DataFlow() {
           IoT Platform
         </text>
         <text
-          x={startX + 5 * boxW + 4.5 * gap - 28}
+          x={startX + 5.5 * boxW + 5 * gap}
           y={40}
+          textAnchor="middle"
           fontSize={11}
           fontWeight={700}
           fill={COL_NAVY_DARK}
