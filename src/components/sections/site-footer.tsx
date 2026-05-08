@@ -1,7 +1,15 @@
+"use client";
+
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { footer, site } from "@/content/site";
 
 export function SiteFooter() {
+  const pathname = usePathname();
+  if (pathname === "/login" || pathname?.startsWith("/login/")) {
+    return null;
+  }
+
   return (
     <footer
       className="border-t border-border/70"

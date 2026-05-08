@@ -8,6 +8,11 @@ import { nav } from "@/content/site";
 export function SiteHeader() {
   const pathname = usePathname();
 
+  // Hide chrome on /login — that page renders its own full-bleed layout.
+  if (pathname === "/login" || pathname?.startsWith("/login/")) {
+    return null;
+  }
+
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(href + "/");
 

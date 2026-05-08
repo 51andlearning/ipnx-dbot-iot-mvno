@@ -54,16 +54,20 @@ Set on Vercel → Project → Settings → Environment Variables. Never commit a
 | `TURNSTILE_SECRET`                        | Production, Preview      | Later    | Server-side Turnstile secret.                                       |
 | `UPSTASH_REDIS_REST_URL` / `_TOKEN`       | Production               | Later    | For rate-limiting the contact form.                                 |
 | `SITE_PASSCODE`                           | Production, Preview      | Optional | If `/commercials` is passcode-gated.                                |
-| `NEXT_PUBLIC_ACCESS_USERNAME`             | Production, Preview, Dev | Optional | Override the AccessGate username (default: `ipnx`).                 |
-| `NEXT_PUBLIC_ACCESS_PASSWORD`             | Production, Preview, Dev | Optional | Override the AccessGate password (default: `dsg-ipnx-2026`).        |
+| `ACCESS_USERNAME`                         | Production, Preview, Dev | Recommended | Username for the middleware-gated sign-in (default: `ipnx`).        |
+| `ACCESS_PASSWORD`                         | Production, Preview, Dev | Recommended | Password for the middleware-gated sign-in (default: `dsg-ipnx-2026`). |
+| `ACCESS_SECRET`                           | Production, Preview      | **Required in prod** | HMAC signing key for the access cookie. Use a random ≥32-char string. |
 
-#### AccessGate (front-door sign-in popup)
+#### Sign-in (edge-middleware front-door)
 
-The whole site is wrapped in a client-side modal gate (`src/components/access-gate.tsx`) that prompts for a username and password before any content is shown. The unlocked state is held in `sessionStorage` so a fresh tab re-prompts.
+The whole site is gated by `src/middleware.ts` running on the Edge runtime. Every request is checked for a signed `ipnx_access` cookie; if missing, expired (>12h), or invalid, the request is redirected to `/login` (a branded page with the ipNX logo and a username/password form).
 
-- **Default credentials:** `ipnx` / `dsg-ipnx-2026` (used if the env vars below are not set).
-- **Override:** set `NEXT_PUBLIC_ACCESS_USERNAME` and `NEXT_PUBLIC_ACCESS_PASSWORD` on the Vercel project, then redeploy. Values are baked into the client bundle at build time.
-- **Caveat:** because the credentials live in client JS, this is a *soft* gate — fine for stopping casual link-sharing, not for genuine secrecy. If real secrecy is required, replace with edge-middleware Basic Auth or Vercel Project Password Protection (Pro plan).
+- **Architecture:** `src/lib/auth.ts` (Web Crypto HMAC-SHA256) ↔ `src/middleware.ts` (cookie verify) ↔ `src/app/login/page.tsx` + `src/app/login/actions.ts` (server action that validates against env vars and sets an `HttpOnly`, `Secure`, `SameSite=Lax` cookie).
+- **Default credentials:** `ipnx` / `dsg-ipnx-2026` (development fallbacks; override on Vercel).
+- **Cookie lifetime:** 12 hours.
+- **Why not `NEXT_PUBLIC_*`?** These env vars are server-only — credentials never reach the browser bundle. Strictly stronger than the previous client-side AccessGate.
+- **Vercel native Password Protection:** considered, but requires Pro plan + Advanced Deployment Protection add-on. The middleware achieves the same outcome on the Hobby plan.
+- **SSO interaction:** if Vercel Authentication / SSO is also enabled on the project, you'll see two gates. Disable SSO (Project Settings → Deployment Protection) so the middleware is the only front door.
 
 Typical workflow:
 - Add the variable in Vercel for all three environments (or just the ones needed).
