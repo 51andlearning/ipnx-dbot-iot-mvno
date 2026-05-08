@@ -3,8 +3,11 @@ export const hero = {
   title: "Build Nigeria's Premier Enterprise IoT MVNO.",
   subtitle:
     "A Design-Build-Operate-Transfer partnership from DSG (MVNE) — launching the ipNX IoT MVNO on a cloud-native global IoT platform. Asset-light, NDPR-aligned, and revenue-generating within nine months.",
-  primaryCta: { label: "Approve Design Phase", href: "#next-steps" },
-  secondaryCta: { label: "Read the Proposal", href: "#strategy" },
+  primaryCta: {
+    label: "Approve Design Phase",
+    href: "mailto:proposals@dsg.africa?subject=ipNX DBOT — Approve Design Phase",
+  },
+  secondaryCta: { label: "Read the Proposal", href: "/strategy" },
 };
 
 export const execSummary = {
